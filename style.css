@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Dotemp-8bit';
+    src: url('fonts/Dotemp-8bit.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+h1{
+    font-family: 'Dotemp-8bit', sans-serif; /* custom font */
+    margin: 20px 0 0 10px;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    
+    border: 20px solid #B4B4B4;
+    height: 100vh; 
+    box-sizing: border-box; 
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add Posts Menu */
+#add-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#add-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#add-menu ul div {
+    padding: 8px 12px;
+}
+
+#add-menu ul div a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#add-menu ul div:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  font-family: inherit; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgray;
+}
+
+form{
+    background-color: rgb(177, 177, 177);
+    width: max-content;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 24px;
+    display: flex;
+    gap: 10px;
+}
+form input{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    cursor: pointer;
+}
+form input::-webkit-color-swatch-wrapper{
+    padding: 0;
+}
+form input::-webkit-color-swatch{
+    border-radius: 50%;
+}
+#list textarea{
+    all: unset;
+    width: 200px;
+    color: black;
+}
+#list .note{
+    background-color: white;
+    border-top: 30px solid #B4B4B4;
+    border-right: 5px solid #B4B4B4;
+    border-bottom: 10px solid #B4B4B4;
+    border-left: 5px solid #B4B4B4;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 200px;
+    min-height: 100px; 
+    height: auto; 
+    overflow-wrap: break-word;
+}
+#list .note span{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    height: 30px;
+    font-size: medium;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#dragger-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#dragger{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed white;
+    background-color: #4daaa7;
+    border-radius: 10px;
+}
+
+#dragger.active{
+    border: 2px dashed #4daaa7;
+}
+
+#dragger img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icon{
+    color: white;
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+#filename{
+    width: 100%;
+    margin: 10px 0 0 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.browseFileBtn{
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+
+.fa-trash-can {
+    color: red;
+    cursor: pointer;
+}
